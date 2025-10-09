@@ -1,8 +1,12 @@
 //get inputs - pressed checks only once when pressed (not hold)
 getControls();
+
 //x movement
 	//direction
 	moveDir = rightKey - leftKey;
+	
+	//get face direction
+	if moveDir != 0 { face = moveDir; };
 
 	//get xspd
 	xspd = moveDir * moveSpd;
@@ -110,8 +114,19 @@ getControls();
 		//move
 		y += yspd;
 		
+		
+//sprite control
+	//run
+	if abs(xspd) > 0 {sprite_index=walkSpr;};
+	//not moving
+	if xspd == 0 {sprite_index=idleSpr};
+	//jumping
+	if !onGround {sprite_index=jumpSpr};
+	//falling
+	if yspd > 0 {sprite_index=fallSpr};
 	
-	
+	//set the collision mask
+	mask_index = idleSpr;
 	
 	
 	

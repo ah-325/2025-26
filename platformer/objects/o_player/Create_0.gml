@@ -13,7 +13,14 @@ function setOnGround(_val = true)
 //control setup
 controlsSetup();
 
+//sprites
+idleSpr = s_playerIdle;
+walkSpr = s_playerWalk;
+jumpSpr = s_playerJump;
+fallSpr = s_playerFall;
+
 //moving
+face = 1;
 moveDir = 0;
 moveSpd = 2;
 xspd = 0;
