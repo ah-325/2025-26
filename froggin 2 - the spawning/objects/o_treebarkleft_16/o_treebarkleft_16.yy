@@ -29,6 +29,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "bark",
-    "path": "folders/Objects/bark.yy",
+    "path": "folders/Objects/decorations/bark.yy",
   },
 }
