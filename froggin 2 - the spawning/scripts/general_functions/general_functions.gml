@@ -63,8 +63,10 @@ function getControls()
 		jumpKeyBuffered = 0;
 	}
 }
+
 function playerDeath()
 {
+	global.playerDeathCount += 1;
 	room_restart()
 }
 	

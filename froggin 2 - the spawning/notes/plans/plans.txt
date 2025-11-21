@@ -6,12 +6,17 @@
 	-moving platform = flies
 
 tutorials:
-
+29 10
 used this
-got to part 7
-1 28 30
+got to part 8
+26 00
 	https://www.youtube.com/playlist?list=PL14Yj-e2sgzxXOwdMYC0IDuG9m-VHEMW2
 
 maybe use in the future
 	https://www.youtube.com/playlist?list=PLPRT_JORnIur4v19PHXCtJ5P05vaokFdP
 	https://www.youtube.com/playlist?list=PL14Yj-e2sgzyy_DW31nkiFujFsLvq3AEn
+	
+	
+frog jump animation heavy inspiration:
+@Redcollarwolf on Ko-fi
+https://ko-fi.com/redcollarwolf?viewimage=IA0A1FBL34#galleryItemView

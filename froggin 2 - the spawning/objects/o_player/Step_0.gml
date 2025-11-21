@@ -1,6 +1,101 @@
 //get inputs - pressed checks only once when pressed (not hold)
 getControls();
 
+//get out of moveplats that have positioned themselves inside of the player in begin step
+#region
+	var _rightWall = noone;
+	var _leftWall = noone;
+	var _bottomWall = noone;
+	var _topWall = noone;
+	var _list = ds_list_create();
+	var _listSize = instance_place_list(x,y,o_moveplatp, _list, false)
+
+	//loop through all colliding moveplats
+	for(var i = 0; i < _listSize; i++)
+	{
+		var _listInst = _list[| i];
+		
+		//find the closest walls in each direction
+		//if there are walls to the right of me get the closest one
+		if _listInst.bbox_left - _listInst.xspd >= bbox_right-1
+		{
+			if !instance_exists(_rightWall) || _listInst.bbox_left < _rightWall.bbox_left
+			{
+				_rightWall=_listInst;
+			}
+		}
+		//left walls
+		if _listInst.bbox_right - _listInst.xspd <= bbox_left+1
+		{
+			if !instance_exists(_leftWall) || _listInst.bbox_right > _leftWall.bbox_right
+			{
+				_leftWall = _listInst;
+			}
+		}
+		//bottom walls
+		if _listInst.bbox_top - _listInst.yspd >= bbox_bottom-1
+		{
+			if !_bottomWall || _listInst.bbox_top < _bottomWall.bbox_top
+			{
+				_bottomWall = _listInst;
+			}
+		}
+		//top walls
+		if _listInst.bbox_bottom - _listInst.yspd <= bbox_top +1
+		{
+			if !_topWall || _listInst.bbox_bottom > _topWall.bbox_bottom
+			{
+				_topWall = _listInst;
+			}
+		}
+	}
+	
+	//destroy the ds list to free memory
+	ds_list_destroy(_list);
+	
+	//get out of the walls
+	//right wall
+		if instance_exists(_rightWall)
+		{
+			var _rightDist = bbox_right - x;
+			x= _rightWall.bbox_left - _rightDist;
+		}
+	//left wall
+	if instance_exists(_leftWall)
+	{
+		var _leftDist = x - bbox_left;
+		x = _leftWall.bbox_right + _leftDist;
+	}
+	//bottom wall
+	if instance_exists(_bottomWall)
+	{
+		var _bottomDist = bbox_bottom - y;
+		y =  _bottomWall.bbox_top - _bottomDist;
+	}
+	//top wall(includes collisions for polish and crouching features)
+	if instance_exists(_topWall)
+	{
+		var _upDist = y - bbox_top;
+		var _targetY = _topWall.bbox_bottom + _upDist;
+		//check if there isnt a wall in thr way
+		if !place_meeting( x,_targetY, o_wallp )
+		{
+			y = _targetY;
+		}
+	}
+#endregion
+
+//dont get left behind by moveplat
+earlyMovePlatXspd=false;
+if instance_exists(myFloorPlat) && myFloorPlat.xspd != 0 && !place_meeting(x,y+moveplatMaxYspd+1, myFloorPlat)
+{
+	//move back onto the platform if nothing in the way
+	if !place_meeting(x + myFloorPlat.xspd, y, o_wallp)
+	{
+		x += myFloorPlat.xspd;
+		earlyMovePlatXspd = true;
+	}
+}
 //x movement
 	//direction
 	moveDir = rightKey - leftKey;
@@ -212,6 +307,8 @@ getControls();
 	//snap y to myfloorplat
 	if instance_exists(myFloorPlat) 
 	&& (myFloorPlat.yspd != 0
+	||myFloorPlat.object_index == o_moveplatp
+	||object_is_ancestor(myFloorPlat.object_index,o_moveplatp)
 	|| myFloorPlat.object_index == o_ssmovingp
 	|| object_is_ancestor(myFloorPlat.object_index,o_ssmovingp))
 	{

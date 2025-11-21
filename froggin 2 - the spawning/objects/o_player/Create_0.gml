@@ -51,5 +51,6 @@ coyoteJumpTimer = 0;
 
 //moving platforms
 myFloorPlat = noone;
+earlyMovePlatXspd = false;
 movePlatXspd = 0;
 moveplatMaxYspd = termVel;
