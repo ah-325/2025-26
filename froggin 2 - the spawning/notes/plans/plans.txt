@@ -1,22 +1,27 @@
--celeste dash, directional(maybe make jump just space bar)
--wall hop maybe
--one big room split into many (tree)
-	-start underground, swing on roots(maybe use circles idk this is tricky stuff here)
-	-climb the tree, you win at the top
-	-moving platform = flies
+plans:
+-different controls settings
+-stages:
+	-start underground amongst roots
+	-climb to the surface
+	-start climbing the tree (up the trunk)
+	-leaves, branches
+	-top of tree (win)
+-add a speedrun clock
 
 tutorials:
-29 10
-used this
-got to part 8
-26 00
+	main one
 	https://www.youtube.com/playlist?list=PL14Yj-e2sgzxXOwdMYC0IDuG9m-VHEMW2
 
 maybe use in the future
 	https://www.youtube.com/playlist?list=PLPRT_JORnIur4v19PHXCtJ5P05vaokFdP
 	https://www.youtube.com/playlist?list=PL14Yj-e2sgzyy_DW31nkiFujFsLvq3AEn
+dash
+	https://www.youtube.com/watch?v=LRt2K9459MM
 	
-	
-frog jump animation heavy inspiration:
+frog jump animation:
 @Redcollarwolf on Ko-fi
 https://ko-fi.com/redcollarwolf?viewimage=IA0A1FBL34#galleryItemView
+
+known bugs:
+fullscreen toggle is buggy
+dash snaps to ground if close enough

@@ -6,35 +6,7 @@ function controlsSetup()
 	jumpKeyBufferTimer = 0;
 }
 
-function semisolidPlatformCheck(_x, _y)
-{
-		//create a return variable
-		var _rtrn = noone;
-		//we mustnt be moving upwards, and then check for a normal collision
-		if yspd >= 0 && place_meeting(_x,_y, o_semisolidp)
-		{
-			//create a ds list to store all colliding instances of o_semisolidp
-			var _list = ds_list_create();
-			var _listSize = instance_place_list(_x,_y, o_semisolidp, _list, false);
-			
-			//loop through the colliding instance and only return one if its top is below the player
-			for (var i = 0; i < _listSize; i++ )
-			{
-				var _listInst = _list[| i];
-				if floor(bbox_bottom) <= ceil( _listInst.bbox_top - _listInst.yspd)
-				{
-					//return the id of a semisolid platform
-					_rtrn = _listInst;
-					//exit the loop early
-					i = _listSize;
-				}
-			}
-			//destroy the list to free memory
-			ds_list_destroy(_list);
-		}
-		//return our variable
-		return _rtrn;
-}
+
 	
 function getControls()
 {
@@ -44,12 +16,22 @@ function getControls()
 	
 	leftKey = keyboard_check(ord("A")) + keyboard_check(vk_left);
 		leftKey = clamp( leftKey,0,1);
+		
+			downKey = keyboard_check(ord("S")) + keyboard_check(vk_down);
+		downKey = clamp( downKey,0,1);
+		
 	//action inputs
-	jumpKeyPressed = keyboard_check_pressed(vk_space) + keyboard_check_pressed(vk_up) + keyboard_check_pressed(ord("W"));
+	jumpKeyPressed = keyboard_check_pressed(vk_space) + keyboard_check_pressed(ord("C"));
 		jumpKeyPressed = clamp( jumpKeyPressed,0,1);
 	
-	jumpKey = keyboard_check(vk_space) + keyboard_check(vk_up) + keyboard_check(ord("W"));
+	jumpKey = keyboard_check(vk_space) + keyboard_check(ord("C"));
 		jumpKey = clamp( jumpKey,0,1);
+		
+	upKey = keyboard_check(ord("W")) + keyboard_check(vk_up);
+		upKey = clamp( upKey,0,1);
+	
+	dashKeyPressed = keyboard_check_pressed(ord("X"));
+	
 	//jump key buffering
 	if jumpKeyPressed
 	{

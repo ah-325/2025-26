@@ -12,3 +12,7 @@ yspd = _targetY - y;
 //move
 x += xspd;
 y += yspd;
+
+//other variable for collisions
+vspd = yspd;
+hspd = xspd;

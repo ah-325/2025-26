@@ -2,6 +2,6 @@
 // Inherit the parent event
 event_inherited();
 
-spd = 2.5;
+spd = 1.5;
 xspd = spd;
 yspd = 0;
