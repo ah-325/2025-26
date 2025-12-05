@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mp3_world1.mp3",
-  "duration": 32.13061,
+  "duration": 32.026123,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
