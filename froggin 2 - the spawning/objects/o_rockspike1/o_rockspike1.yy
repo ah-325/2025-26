@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_treespike2",
+  "name": "o_rockspike1",
   "spriteId": {
-    "name": "s_treespike2",
-    "path": "sprites/s_treespike2/s_treespike2.yy",
+    "name": "s_rockspike1",
+    "path": "sprites/s_rockspike1/s_rockspike1.yy",
   },
   "solid": false,
   "visible": true,
