@@ -25,3 +25,5 @@ https://ko-fi.com/redcollarwolf?viewimage=IA0A1FBL34#galleryItemView
 known bugs:
 fullscreen toggle is buggy
 dash snaps to ground if close enough
+
+all backgrounds will be redone eventually
