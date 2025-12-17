@@ -7,6 +7,9 @@ plans:
 	-leaves, branches
 	-top of tree (win)
 -add a speedrun clock
+-add a collectable that resets jump amount
+-make backgrounds look better - underground,
+-coins
 
 tutorials:
 	main one
@@ -25,5 +28,4 @@ https://ko-fi.com/redcollarwolf?viewimage=IA0A1FBL34#galleryItemView
 known bugs:
 fullscreen toggle is buggy
 dash snaps to ground if close enough
-
-all backgrounds will be redone eventually
+-i doubt i will fix these since they arent game breaking; theyre a feature not a bug ;)
