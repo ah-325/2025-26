@@ -1,5 +1,6 @@
 plans:
 -different controls settings
+-make fly anim and put in surface levels and branches and top
 -stages:
 	-start underground amongst roots
 	-climb to the surface
