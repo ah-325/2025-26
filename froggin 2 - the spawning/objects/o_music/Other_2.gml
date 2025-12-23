@@ -1,1 +1,1 @@
-audio_play_sound(mp3_world1, 0, 1, 1.0, undefined, 1.0);
+//audio_play_sound(mp3_world1, 0, 1, 1.0, undefined, 1.0);

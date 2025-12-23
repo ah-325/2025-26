@@ -73,6 +73,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_53759B0D","properties":[],"isDnd":false,"objectId":{"name":"o_treeblock16","path":"objects/o_treeblock16/o_treeblock16.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":880.0,"y":80.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2EB828F5","properties":[],"isDnd":false,"objectId":{"name":"o_rock2","path":"objects/o_rock2/o_rock2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":240.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3904A841","properties":[],"isDnd":false,"objectId":{"name":"o_rock2","path":"objects/o_rock2/o_rock2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":848.0,"y":240.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7A6BF30D","properties":[],"isDnd":false,"objectId":{"name":"o_snail","path":"objects/o_snail/o_snail.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":240.0,"y":224.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"player","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D793A5C","properties":[],"isDnd":false,"objectId":{"name":"o_player","path":"objects/o_player/o_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":144.0,"y":224.0,},
@@ -148,6 +149,7 @@
     {"name":"inst_53759B0D","path":"rooms/RoomTest/RoomTest.yy",},
     {"name":"inst_2EB828F5","path":"rooms/RoomTest/RoomTest.yy",},
     {"name":"inst_3904A841","path":"rooms/RoomTest/RoomTest.yy",},
+    {"name":"inst_7A6BF30D","path":"rooms/RoomTest/RoomTest.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

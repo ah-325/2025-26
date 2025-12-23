@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "mp3_world1",
+  "name": "mp3_world3",
   "conversionMode": 0,
   "compression": 0,
   "volume": 0.3,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mp3_world1.mp3",
-  "duration": 32.026123,
+  "soundFile": "mp3_world3.mp3",
+  "duration": 16.195917,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
