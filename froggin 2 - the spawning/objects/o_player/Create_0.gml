@@ -64,6 +64,9 @@ dashEnergy = dashDistance;
 hsp = 0;
 vsp = 0;
 
+// Variables for respawning collectables
+collectableRespawnX = 0;
+collectableRespawnY = 0;
 
 //states
 stateFree = function()
