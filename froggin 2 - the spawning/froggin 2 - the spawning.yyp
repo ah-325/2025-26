@@ -62,7 +62,9 @@
     {"id":{"name":"s_rock2","path":"sprites/s_rock2/s_rock2.yy",},"order":11,},
     {"id":{"name":"s_flyplat","path":"sprites/s_flyplat/s_flyplat.yy",},"order":1,},
     {"id":{"name":"s_hazardp","path":"sprites/s_hazardp/s_hazardp.yy",},"order":0,},
+    {"id":{"name":"r_w4s2","path":"rooms/r_w4s2/r_w4s2.yy",},"order":20,},
     {"id":{"name":"o_simplemoveplat","path":"objects/o_simplemoveplat/o_simplemoveplat.yy",},"order":1,},
+    {"id":{"name":"mp3_world4","path":"sounds/mp3_world4/mp3_world4.yy",},"order":5,},
     {"id":{"name":"o_woodslope_rightdown_16","path":"objects/o_woodslope_rightdown_16/o_woodslope_rightdown_16.yy",},"order":11,},
     {"id":{"name":"s_dirt2_2","path":"sprites/s_dirt2_2/s_dirt2_2.yy",},"order":10,},
     {"id":{"name":"o_treebarkright_16","path":"objects/o_treebarkright_16/o_treebarkright_16.yy",},"order":1,},
@@ -170,6 +172,7 @@
     {"roomId":{"name":"r_w3s4","path":"rooms/r_w3s4/r_w3s4.yy",},},
     {"roomId":{"name":"r_w3s5","path":"rooms/r_w3s5/r_w3s5.yy",},},
     {"roomId":{"name":"r_w4s1","path":"rooms/r_w4s1/r_w4s1.yy",},},
+    {"roomId":{"name":"r_w4s2","path":"rooms/r_w4s2/r_w4s2.yy",},},
     {"roomId":{"name":"RoomTest","path":"rooms/RoomTest/RoomTest.yy",},},
   ],
   "Folders": [

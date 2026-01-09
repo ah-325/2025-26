@@ -14,3 +14,8 @@
 	audio_pause_sound(mp3_world2);
 	audio_play_sound(mp3_world3,1,1);
 	}
+	if (room==r_w4s1 && !audio_is_playing(mp3_world4))
+	{
+	audio_pause_sound(mp3_world3);
+	audio_play_sound(mp3_world4,1,1);
+	}
