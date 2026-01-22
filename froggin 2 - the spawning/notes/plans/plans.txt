@@ -30,3 +30,5 @@ known bugs:
 fullscreen toggle is buggy
 dash snaps to ground if close enough
 -i doubt i will fix these since they arent game breaking; theyre a feature not a bug ;)
+
+hsuzdgvku
